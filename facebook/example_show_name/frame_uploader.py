@@ -754,7 +754,8 @@ while True:
 
         random_url = random.choice(lines)
 
-        end_post_message = f"{config.end_post_phrase}\n \nThis is a fan run page. The posts may be automated but it takes a lot of time to process the frames for the bot. If you'd like to support me check out my Redbubble for fan-made designs on shirts, stickers and more!\nHere's a random one: {random_url} \n \nI also have a Youtube channel where I remake Pokemon cutscenes in 3D animations. https://www.youtube.com/c/Biochao \n\nOr if you just want to give a little tip you can do so here: https://ko-fi.com/biochao \n\nStats:\nPosted {current_total} frames since starting the page."
+        # Add {random_url} to the string below to get a random url from the promos file
+        end_post_message = f"{config.end_post_phrase}\n \nThis is a fan run page. The posts may be automated but it takes a lot of time to process the frames for the bot.  \n\nStats:\nPosted {current_total} frames since starting the page."
         
         if config.online_mode:
             
