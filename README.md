@@ -3,16 +3,27 @@ Python scripts that make and upload frames from shows to various platforms
 
 # Features
 • Simple to use and edit
+
 • Frame extractor script makes frames for every video in a folder or just one video file
+
 • Makes info files while extracting frames
+
 • Visual indication of what and how many frames will be uploaded
+
 • Upload bot can report errors and status to Discord
+
 • Configureable timings for post batches and amount
+
 • Can retry on errors for a number of times before giving up
+
 • Support for adding subtitles with a configurable font and style to frames from .srt files
+
 • Option to increment a counter when ever a specific word or phrase in a subtitle
+
 • Can log post ids it uploads
+
 • Configurable random comments on posts
+
 • Option to upload images to an album during or at the end of an episode
 
 
