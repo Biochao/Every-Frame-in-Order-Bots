@@ -700,7 +700,11 @@ while True:
         album_id = config.toBeContinued_album_id
         album_status = "\nTo Be Continued..."
         file_path = os.path.join(frames_folder, frame_files[-1])
-        post_response = make_album_post()
+        try:
+            post_response = make_album_post()
+        except:
+            print("Error while uploading. Trying again soon.")
+            time.sleep(config.error_delay)
         print("To be continued added to album. Waiting to upload panoramas")
         time.sleep(config.wait_time/2)
 
@@ -711,7 +715,11 @@ while True:
             file_path = os.path.join(panorama_folder, filename)
             pano_list_index = pano_list.index(filename)
             album_status = f"\nPanorama {pano_list_index+1} of {pano_list_length}"
-            post_response = make_album_post()
+            try:
+                post_response = make_album_post()
+            except:
+                print("Error while uploading. Trying again soon.")
+                time.sleep(config.error_delay)
             time.sleep(145)
         print("All panoramas uploaded")
     
