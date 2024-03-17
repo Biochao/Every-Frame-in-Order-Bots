@@ -40,7 +40,8 @@ Python scripts that make and upload frames from shows to various platforms
 9. Copy the files from the example_show_name folder to your showname folder.
 10. Edit config.py to your preferred settings. You'll need to set the file config set posting speed and add your api keys to it. Follow the comments in the file.
 11. If using end_post you might want to edit end_post_message in frame_uploader.py to customise the end post.
-12. Run frame_uploader to start posting frames!
+12. Add video file pathnames to video_list.txt to create a "playlist". (1 pathname per line, no quotation marks) You can run frame_uploader.py to create the file for you if it doesn't exist.
+13. Run frame_uploader.py and it will sequentially read each video pathname, use the json file created by makeFrames.py to find the frames folders, and upload all the frames for each episode or special.
 
 
 
